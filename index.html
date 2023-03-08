@@ -1,14 +1,19 @@
 <html>
 <body>
-
-<button onclick="openTabs()">Open 20 Tabs</button>
+  Note : Open this website where bing is the default search engine.
+  OR
+  Simply open this website in bing and CLICK ON THE BUTTON BELOW!
+  <center>Please allow pop-ups for this site! else it won't work.</center>
+  <button onclick="openTabs()">Just Click here to complete all your rewards!</button>
 </body>
 <script>
-function openTabs() {
-  var urls = ["https://www.bing.com/search?q=hello", "https://www.bing.com/search?q=world", "https://www.bing.com/search?q=wofdsrld","https://www.bing.com/search?q=woraeld","https://www.bing.com/search?q=wfedorld", "https://www.bing.com/search?q=woresald","https://www.bing.com/search?q=workyld","https://www.bing.com/search?q=worli7d","https://www.bing.com/search?q=worjnld","https://www.bing.com/search?q=wo76rld","https://www.bing.com/search?q=world","https://www.bing.com/search?q=worlhted","https://www.bing.com/search?q=wofdsrld","https://www.bing.com/search?q=worvveld","https://www.bing.com/search?q=woqqsrld","https://www.bing.com/search?q=wozewzdrld","https://www.bing.com/search?q=wfasdsafeorld", "https://www.bing.com/search?q=wofeifasjdfsdsrld","https://www.bing.com/search?q=woraasfdeld","https://www.bing.com/search?q=wfedfesdorld", "https://www.bing.com/search?q=worefasdaesald","https://www.bing.com/search?q=worgafdkyld","https://www.bing.com/search?q=wor4trli7d","https://www.bing.com/search?q=worxczjnld","https://www.bing.com/search?q=wo7zzzb6rld","https://www.bing.com/search?q=wbborld","https://www.bing.com/search?q=worlhtutted","https://www.bing.com/search?q=wofdsppprld","https://www.bing.com/search?q=woqqqrvveld","https://www.bing.com/search?q=woqqwwwsrld","https://www.bing.com/search?q=wozewzrrrdrld"];
-  for (var i = 0; i < urls.length; i++) {
-    window.open(urls[i]);
+  function openTabs() {
+    var url = "https://www.bing.com/search?q=hello";    //a single link.
+    for (var i = 0; i < 30; i++) {
+      var temp = url + i;     // that link will be concatinated with i each time the iteration happens.
+      window.open(temp);
+    }
   }
-}
 </script>
+
 </html>
