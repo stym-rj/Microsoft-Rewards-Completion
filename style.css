@@ -2,7 +2,7 @@
     --accent: #92ffd7;
     --font-clr: #fafafa;
     --bg: #606060;
-    --background-img:url(../Microsoft-Rewards-Completion/assets/pattern.png);
+    --background-img:url(../Microsoft-Rewards-Completion/pattern.png);
 }
 
 * {
@@ -34,7 +34,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    opacity: 0.9;
+    opacity: 0.9;;
 }
 
 .steps{
