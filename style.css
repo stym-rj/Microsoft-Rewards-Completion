@@ -1,0 +1,41 @@
+:root {
+    --accent: #92ffd7;
+    --bg: #606060;
+    --background-img:url(/Microsoft-Rewards-Completion/assets/pattern.png);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #363535;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    background-image: var(--background-img);
+    height: 100%;
+    opacity: 1;
+}
+
+.main{
+    position: relative;
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg);
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.btn {
+    padding: 2rem;
+    border: 1px;
+    border-radius: 10% 10%/50%;
+    background-color: var(--accent);
+    font-size: large;
+    font-weight: 600;
+}
