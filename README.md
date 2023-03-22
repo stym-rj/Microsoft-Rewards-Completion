@@ -3,6 +3,7 @@
 Complete Microsoft Rewards per day just with one click!
 
 https://stym-rj.github.io/Microsoft-Rewards-Completion/
+https://microsoft-rewards-completion.vercel.app/
 
 Click on the above link to get redirected.
 
