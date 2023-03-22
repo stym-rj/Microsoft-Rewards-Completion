@@ -1,5 +1,6 @@
 :root {
     --accent: #92ffd7;
+    --font-clr: #fafafa;
     --bg: #606060;
     --background-img:url(/Microsoft-Rewards-Completion/assets/pattern.png);
 }
@@ -7,7 +8,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #363535;
+    color: var(--font-clr);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,15 +28,39 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--bg);
-    width: 80%;
+    width: 60%;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.steps{
+    margin: .5rem;
 }
 
 .btn {
-    padding: 2rem;
+    margin: .5rem;
+    padding: 1.5rem;
     border: 1px;
-    border-radius: 10% 10%/50%;
+    border-radius: 5rem;
     background-color: var(--accent);
+    color: #606060;
     font-size: large;
     font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 810px) {
+    .main{
+        flex-direction: column;
+        width: 90%;
+    }
 }
