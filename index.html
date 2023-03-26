@@ -1,13 +1,15 @@
 <html>
-  <head>
-    <title>MSRC</title>
-    <meta name="description" content="complete daily microsoft rewards in just a single click." />
-    <meta name="keywords" content="microsoft rewards auto completion, microsoft rewards hack, how to complete all search tasks easily for microsoft rewards, microsoft rewards in a single click" />
-    <meta name="author" content="Satyam Raj" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" class="css">
-  </head>
-  
+
+<head>
+  <title>MSRC</title>
+  <meta name="description" content="complete daily microsoft rewards in just a single click." />
+  <meta name="keywords"
+    content="microsoft rewards auto completion, microsoft rewards hack, how to complete all search tasks easily for microsoft rewards, microsoft rewards in a single click" />
+  <meta name="author" content="Satyam Raj" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" class="css">
+</head>
+
 
 <body class="container">
   <div class="main">
@@ -26,12 +28,34 @@
 
 <script>
   function openTabs() {
-    var url = "https://www.bing.com/search?q=hello";    //a single link.
+    var url = "https://www.bing.com/search?q=";    //a single link.
     for (var i = 0; i < 30; i++) {
-      var temp = url + i;     // that link will be concatinated with i each time the iteration happens.
+      var temp = url + generateRandomWord(Math.floor(Math.random() * (11 - 5 + 1)) + 5);     // that link will be concatinated with i each time the iteration happens.
       window.open(temp);
     }
   }
+
+
+
+  function generateRandomWord(length) {
+    let vowels = "aeiou";
+    let consonants = "bcdfghjklmnpqrstvwxyz";
+    let word = "";
+    let i;
+
+    for (i = 0; i < length; i++) {
+      if (i % 2 == 0) {
+        // Generate a vowel
+        word += vowels.charAt(Math.floor(Math.random() * vowels.length));
+      } else {
+        // Generate a consonant
+        word += consonants.charAt(Math.floor(Math.random() * consonants.length));
+      }
+    }
+
+    return word;
+  }
+
 </script>
 
 </html>
