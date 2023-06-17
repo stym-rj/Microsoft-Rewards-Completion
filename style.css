@@ -58,6 +58,14 @@
     cursor: pointer;
 }
 
+input {
+    color: var(--bg);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 @media screen and (max-width: 810px) {
     .main{
         flex-direction: column;
