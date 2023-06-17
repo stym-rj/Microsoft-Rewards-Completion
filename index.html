@@ -30,7 +30,7 @@
   function openTabs() {
     var url = "https://www.bing.com/search?q=";    //a single link.
     for (var i = 0; i < 30; i++) {
-      var temp = url + generateRandomWord(Math.floor(Math.random() * (8 - 3 + 1)) + 8);     // that link will be concatinated with i each time the iteration happens.
+      var temp = url + generateRandomWord(Math.floor(Math.random() * (5 - 3 + 1)) + 5);     // that link will be concatinated with i each time the iteration happens.
       window.open(temp);
     }
   }
