@@ -21,7 +21,10 @@
       <h3>4 : Close all tabs once 30 tabs are auto oppened.</h3>
     </div>
     <div class="btn-cont">
-      <center class="btn-container"><button class="btn" onclick="openTabs()">Complete Rewards!</button></center>
+      <center class="btn-container">
+        <button class="btn" onclick="openTabs()">Complete Rewards!</button>
+        <input type="number" placeholder="No of Tabs" min="1" max="150" id="nt"> 
+      </center>
     </div>
   </div>
 </body>
@@ -29,7 +32,9 @@
 <script>
   function openTabs() {
     var url = "https://www.bing.com/search?q=";    //a single link.
-    for (var i = 0; i < 30; i++) {
+    var nt = document.getElementById("nt").value;
+    if(nt == ''){nt = 30;}                          //if no value is given then it will open 30 tabs by default.
+    for (var i = 0; i < nt; i++) {
       var temp = url + generateRandomWord(Math.floor(Math.random() * (5 - 3 + 1)) + 5);     // that link will be concatinated with i each time the iteration happens.
       window.open(temp);
     }
